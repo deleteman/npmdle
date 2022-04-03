@@ -70,13 +70,14 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>NPMle</title>
 </svelte:head>
 
 <section>
-	<h1>
-		Welcome to NPMDle
+	<h1 class="main-title">
+		Welcome to <span>NPM</span>le
 	</h1>
+	<h2>Silly name, I know, lbut try to guess the NPM package name</h2>
 
 	<EndGameModal isOpen={showEndGameModal} stats={$gameState} alreadyPlayed={alreadyPlayed}/>
 	<GameoverModal isOpen={showGameOver} stats={$gameState} />
@@ -84,3 +85,16 @@
 	<Keyboard></Keyboard>
 </section>
 
+<style>
+	.main-title {
+		font-weight: bold;
+		font-family: Poppins,sans-serif;
+	}
+	.main-title span {
+		color: #C3322D;
+		font-style: italic;
+	}
+	h2 {
+		text-align: center;
+	}
+</style>
