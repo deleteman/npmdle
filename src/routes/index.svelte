@@ -25,8 +25,8 @@
 		let today = (new Date())
 		today.setHours(0,0,0,0)	
 		let todaytimeStamp = today.getTime()
-		console.log("last game: ", $gameState.lastgame)
-		console.log("today timestamp: ", todaytimeStamp)
+		//console.log("last game: ", $gameState.lastgame)
+		//console.log("today timestamp: ", todaytimeStamp)
 		if($gameState.lastgame == todaytimeStamp) {
 			alreadyPlayed = true;
 			$gameState.alreadyPlayed = true;
@@ -36,7 +36,7 @@
 		const resp = await fetch(url + todaytimeStamp)
 		let encodedWord = await resp.text()
 		word = atob(encodedWord)
-		console.log("today's word: ", word)
+		//console.log("today's word: ", word)
 	}
 
 	function updateGameDataCookie(data) {
