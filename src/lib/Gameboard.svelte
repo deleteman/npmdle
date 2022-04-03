@@ -6,7 +6,7 @@
   
   
   const LETTERS_PER_WORD = 5;
-  const GUESSES = 5;
+  const GUESSES = 7;
   
   let gameBoard;
   
@@ -134,7 +134,7 @@
 
 
 <div id="game-board" bind:this={gameBoard}>
-  {#each [1,2,3,4,5] as row}		
+  {#each [1,2,3,4,5, 6,7] as row}		
   <div class="letter-row">
     {#each [1,2,3,4,5] as letter}		
     <div class={this.text ? ' rightcharwrongplace-box filled-box rightchar-box'  : 'letter-box'}></div>
@@ -171,12 +171,14 @@
   .rightchar-box {
     border: 2px solid black !important;
     background-color: darkgreen !important;
+    transition: background-color 500ms linear;
     color:aliceblue !important;
   }
   .rightcharwrongplace-box {
     border: 2px solid black !important;
-    background-color: yellow !important;
-    color:aliceblue !important;
+    background-color: #B59F3B !important;
+    transition: background-color 500ms linear;
+    color:#ddd !important;
   }
   
   .filled-box {

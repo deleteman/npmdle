@@ -107,6 +107,12 @@
         border: 0px;
         padding: 9px;
     }
+    .share-button:hover {
+        background: #050;
+    }
+    .share-button:active{
+        background: #090;
+    }
     .container {
         padding: 5px;
         text-align: center;

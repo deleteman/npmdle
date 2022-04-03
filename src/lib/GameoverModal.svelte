@@ -29,78 +29,7 @@
         <div class="statistic-container share-container">
             <button class="share-button" on:click={shareStatus}>Share</button>
         </div>
-        <!--
-            <div class="statistic-container">
-                <div class="statistic">91</div>
-                <div class="label">Win %</div>
-            </div>
-            
-            <div class="statistic-container">
-                <div class="statistic">5</div>
-                <div class="label">Current Streak</div>
-            </div>
-            
-            <div class="statistic-container">
-                <div class="statistic">6</div>
-                <div class="label">Max Streak</div>
-            </div>
-        </div>
-        <h1>Guess Distribution</h1>
-        <div id="guess-distribution">
-            <div class="graph-container">
-                <div class="guess">1</div>
-                <div class="graph">
-                    <div class="graph-bar" style="width: 7%;">
-                        <div class="num-guesses">0</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="graph-container">
-                <div class="guess">2</div>
-                <div class="graph">
-                    <div class="graph-bar" style="width: 7%;">
-                        <div class="num-guesses">0</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="graph-container">
-                <div class="guess">3</div>
-                <div class="graph">
-                    <div class="graph-bar align-right" style="width: 71%;">
-                        <div class="num-guesses">10</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="graph-container">
-                <div class="guess">4</div>
-                <div class="graph">
-                    <div class="graph-bar align-right" style="width: 79%;">
-                        <div class="num-guesses">11</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="graph-container">
-                <div class="guess">5</div>
-                <div class="graph">
-                    <div class="graph-bar align-right" style="width: 100%;">
-                        <div class="num-guesses">14</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="graph-container">
-                <div class="guess">6</div>
-                <div class="graph">
-                    <div class="graph-bar align-right" style="width: 36%;">
-                        <div class="num-guesses">5</div>
-                    </div>
-                </div>
-            </div>
-        -->
+  
     </div>
     <div class="footer"></div>
     
@@ -138,6 +67,12 @@ padding: 10px;
         color: white;
         border: 0px;
         padding: 9px;
+    }
+    .share-button:hover {
+        background: #050;
+    }
+    .share-button:active{
+        background: #090;
     }
     .share-container {
         text-align: center;
