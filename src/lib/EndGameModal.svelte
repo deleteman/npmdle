@@ -10,7 +10,7 @@
     }
 
     function shareStatus() {
-        let textStatus = "I guessed today's NPM package name in NPMDle! \n I'm either really lucky or I need a life"
+        let textStatus = "I guessed today's NPM package name in NPMle! \n I'm either really lucky or I need a life"
         textStatus += "\n"
         textStatus += $gameState.attemptsStatus.join("\n")
         navigator.clipboard.writeText(textStatus);

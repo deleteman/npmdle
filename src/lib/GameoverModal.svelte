@@ -8,7 +8,7 @@
     }
 
     function shareStatus() {
-        let textStatus = "I'm terrible at NPMDle, can you do better than me?"
+        let textStatus = "I'm terrible at NPMle, can you do better than me?"
         textStatus += "\n"
         textStatus += $gameState.attemptsStatus.join("\n")
         navigator.clipboard.writeText(textStatus);
