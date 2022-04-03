@@ -108,9 +108,13 @@
       //handling backspace
       if(event.code == 'Backspace') {
         currentChar--;
+        console.log("current word: ", currentWord)
+        currentWord = currentWord.slice(0, currentWord.length - 1)
+        console.log("current word: ", currentWord)
         if(currentChar < 0) currentChar = 0;
         letterBoxes[currentChar].innerHTML = "";
         letterBoxes[currentChar].classList.remove('filled-box')
+        return;
       }
       
       //avoid non-alphabetic character
