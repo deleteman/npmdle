@@ -2,6 +2,7 @@
     export let isOpen;
     export let stats;
     export let alreadyPlayed;
+    export let maxtries;
 
     import {gameState} from '$lib/store.js'
     
@@ -10,7 +11,7 @@
     }
 
     function shareStatus() {
-        let textStatus = "I guessed today's NPM package name in NPMle! \n I'm either really lucky or I need a life"
+        let textStatus = "I guessed today's NPM package name in NPMle! (" + $gameState.attempts + "/7) \n I'm either really lucky or I need a life"
         textStatus += "\n"
         textStatus += $gameState.attemptsStatus.join("\n")
         navigator.clipboard.writeText(textStatus);
