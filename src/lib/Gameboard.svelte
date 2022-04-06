@@ -98,6 +98,9 @@
       //handling enter key
       if(event.code == 'Enter') {
         if(currentChar < LETTERS_PER_WORD) return; //make sure we're not evaluating before entering the full word
+        if(currentGuess == 0) { //if it's the first word we try today
+          $gameState = {...$gameState, attemptsStatus: []}
+        }
         if(!evaluateWord(currentWord, currentRow)) {
           return invalidWord(currentGuess)
         } else {
@@ -108,9 +111,7 @@
       //handling backspace
       if(event.code == 'Backspace') {
         currentChar--;
-        console.log("current word: ", currentWord)
         currentWord = currentWord.slice(0, currentWord.length - 1)
-        console.log("current word: ", currentWord)
         if(currentChar < 0) currentChar = 0;
         letterBoxes[currentChar].innerHTML = "";
         letterBoxes[currentChar].classList.remove('filled-box')
